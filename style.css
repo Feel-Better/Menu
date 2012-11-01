@@ -19,10 +19,14 @@
   speak: none;
 }
 
-.icon-home:after { content: "\2302"; } 
-.icon-pf:after { content: "\1F4C1"; } 
-.icon-about:after { content: "\E722"; } 
-.icon-contact:after { content: "\1F4DE"; } 
+.icon-home:after     { content: "\2302" ; }
+.icon-pf:after       { content: "\1F4C1"; } 
+.icon-about:after    { content: "\E722" ; } 
+.icon-contact:after  { content: "\1F4DE"; }
+.icon-services:after { content: "\2692" ; }
+.icon-store:after    { content: "\E73D" ; }
+.icon-support:after    { content: "\E788" ; }
+.icon-search:after    { content: "\1F50D" ; }
 
 .cover:before,.cover:after{content:" ";display:table}
 .cover:after{clear:both;}
@@ -37,7 +41,8 @@ div.menu {
 
 div.menu > ul {
 	overflow         : hidden;
-	width            : 335px;
+	float            : left;
+	/*width          : 770px;*/
 	margin           : 0 auto;
 	list-style-type  : none;
 	background-image : url('images/ul.jpg');
@@ -54,6 +59,9 @@ div.menu > ul {
 div.menu > ul > li {
 	float    : left;
 	position : relative;
+}
+
+li.service {
 }
 
 div.menu > ul > li:first-child , li:first-child div {
@@ -73,35 +81,40 @@ div.menu li a {
 }
 
 div.menu > ul > li > a {
-	padding         : 15px 20px;
+	padding  : 15px 20px;
 }
 
 div.menu  ul  li  div {
-	cursor   : pointer;
- 	position : absolute;
- 	left     : 0;
- 	top      : 0;
- 	width    : 100%;
- 	height   : 100%;
- 	text-align : center;
- 	background : #f7f7f7;
+    cursor   : pointer;
+ 	  position : absolute;
+ 	  left     : 0;
+  	top      : 0;
+ 	  width    : 100%;
+ 	  height   : 100%;
+ 	  text-align : center;
+ 	  background : #f7f7f7;
     background : -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
     background : -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
     background : -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
     background : -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
     background : -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
-    -webkit-transition : top 0.4s ease-out;
-    -moz-transition    : top 0.4s ease-out;
-    -o-transition      : top 0.4s ease-out;
-    -ms-transition     : top 0.4s ease-out;
+    -webkit-transition : top 0.3s ease-in;
+    -moz-transition    : top 0.3s ease-in;
+    -o-transition      : top 0.3s ease-in;
+    -ms-transition     : top 0.3s ease-in;
 }
 
 div.menu > ul > li:hover div {
 	top : -100%;
-	-webkit-transition : top 0.4s ease-in;
-	-moz-transition    : top 0.4s ease-in;
-    -o-transition      : top 0.4s ease-in;
-    -ms-transition     : top 0.4s ease-in;
+	-webkit-transition : top 0.4s ease-out;
+	-moz-transition    : top 0.4s ease-out;
+    -o-transition      : top 0.4s ease-out;
+    -ms-transition     : top 0.4s ease-out;
+    box-shadow : 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+
+div.menu > ul > li:hover {
+  box-shadow : 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
 }
 
 div.menu > ul > li > div > a {
